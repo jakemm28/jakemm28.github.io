@@ -1,0 +1,139 @@
+@font-face {
+    font-family: Jomhuria;
+    src: url(fonts/Jomhuria-Regular.ttf);
+}
+
+body {
+    /*font-family: Jomhuria;,*/
+    font-family: serif;
+    background-color: black;
+    margin-top: 70px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #af45e3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul li {
+    float: left;
+    margin: 5px;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover:not(.active) {
+    background-color: #a762c6;
+}
+
+.home-page, .about-me {
+    text-align: center;
+    display:block;
+    margin: auto;
+}
+
+#Home-Title, #Project-Title, #About-Me-Title, #Contact-Title {
+    font-size: 70px;
+    color: #af45e3;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: center;
+    display:block;
+    margin: auto;
+}
+
+#about-me-text-block {
+    text-align: left;
+    font-size: 32px;
+    color: #a593ec;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.projects-container {
+    display: block;
+    font-size: 32px;
+    color: #a593ec;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+#battleship-button, #poker-button, #inventory-management-button {
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: #a593ec;
+}
+
+#battleship-button:hover, #poker-button:hover, #inventory-management-button:hover {
+    background-color: #b3a4f6;
+}
+
+.poker-content-container, .battleship-content-container, .inventory-management-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#poker-text, #inventory-management-text, #battleship-text {
+    text-align: left;
+    font-size: 28px;
+    max-width: 400px; /*Stops the text from taking to much space*/
+}
+
+#poker-cards-image, #inventory-management-image, #battleship-image {
+    width: 300px;
+    height: 300px;
+    float: right
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#submit-button {
+    background-color: #a593ec;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #b3a4f6;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
